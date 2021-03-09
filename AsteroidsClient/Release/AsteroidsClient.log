@@ -1,0 +1,30 @@
+﻿  Asteroid.cpp
+  EntityManager.cpp
+  Game.cpp
+  GameCamera.cpp
+  GameObject.cpp
+  GenericComponent.cpp
+  InputManager.cpp
+  Laser.cpp
+  main.cpp
+C:\Users\Brendan\source\repos\Asteroids\AsteroidsClient\Game.cpp(102,16): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\Brendan\source\repos\Asteroids\AsteroidsClient\main.cpp(62,9): warning C4101: 'leftPressed': unreferenced local variable
+C:\Users\Brendan\source\repos\Asteroids\AsteroidsClient\main.cpp(64,9): warning C4101: 'upPressed': unreferenced local variable
+C:\Users\Brendan\source\repos\Asteroids\AsteroidsClient\main.cpp(63,9): warning C4101: 'rightPressed': unreferenced local variable
+  Pattern.cpp
+  GameTime.cpp
+C:\Users\Brendan\source\repos\Asteroids\AsteroidsClient\main.cpp(46,9): warning C4101: 'remove': unreferenced local variable
+  PatternPlatform.cpp
+  Player.cpp
+  SideBoundary.cpp
+  SideBoundaryComponent.cpp
+  StaticPlatform.cpp
+  TransformComponent.cpp
+  ResourceManager.cpp
+  Timeline.cpp
+C:\Users\Brendan\source\repos\Asteroids\AsteroidsClient\GameTime.cpp(55,19): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 1496 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  AsteroidsClient.vcxproj -> C:\Users\Brendan\source\repos\Asteroids\Release\AsteroidsClient.exe

@@ -1,0 +1,6 @@
+﻿  SpawnSystem.cpp
+c:\vsdev\dukglue-master\include\dukglue\detail_primitive_types.h(41): warning C4244: 'argument': conversion from 'uint64_t' to 'duk_double_t', possible loss of data
+  c:\vsdev\dukglue-master\include\dukglue\detail_primitive_types.h(41): note: This diagnostic occurred in the compiler generated function 'void dukglue::types::DukType<uint64_t>::push(duk_context *,uint64_t)'
+c:\vsdev\dukglue-master\include\dukglue\detail_primitive_types.h(46): warning C4244: 'argument': conversion from 'int64_t' to 'duk_double_t', possible loss of data
+  c:\vsdev\dukglue-master\include\dukglue\detail_primitive_types.h(46): note: This diagnostic occurred in the compiler generated function 'void dukglue::types::DukType<int64_t>::push(duk_context *,int64_t)'
+  AsteroidsServer.vcxproj -> C:\Users\Brendan\source\repos\Asteroids\Debug\AsteroidsServer.exe

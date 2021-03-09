@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{8d7c0d91-dbaa-47d6-9df6-d37ffea25ffa}</ProjectGuid>
+    <RootNamespace>AsteroidsServer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\vsdev\dukglue-master\include;C:\vsdev\libzmq-v141-4_3_2;C:\vsdev\duktape-2.4.0\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>C:\vsdev\libzmq-v141-4_3_2;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libzmq-v141-mt-4_3_2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\vsdev\libzmq-v141-4_3_2;C:\vsdev\dukglue-master\include;C:\vsdev\duktape-2.4.0\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\vsdev\libzmq-v141-4_3_2;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libzmq-v141-mt-4_3_2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Asteroid.cpp" />
+    <ClCompile Include="ChangeReplaySpeedEvent.cpp" />
+    <ClCompile Include="CollisionEvent.cpp" />
+    <ClCompile Include="CreateAsteroidsEvent.cpp" />
+    <ClCompile Include="DeathEventParameter.cpp" />
+    <ClCompile Include="DestroyEvent.cpp" />
+    <ClCompile Include="duktape.c" />
+    <ClCompile Include="EnemyComponent.cpp" />
+    <ClCompile Include="EventManagerParameter.cpp" />
+    <ClCompile Include="FriendlyComponent.cpp" />
+    <ClCompile Include="InputEvent.cpp" />
+    <ClCompile Include="IntParameter.cpp" />
+    <ClCompile Include="JumpComponentParameter.cpp" />
+    <ClCompile Include="MovementComponentParameter.cpp" />
+    <ClCompile Include="MovementSystem.cpp" />
+    <ClCompile Include="CollisionsDetector.cpp" />
+    <ClCompile Include="ColorComponent.cpp" />
+    <ClCompile Include="DeathEvent.cpp" />
+    <ClCompile Include="DeathZone.cpp" />
+    <ClCompile Include="DieComponent.cpp" />
+    <ClCompile Include="Event.cpp" />
+    <ClCompile Include="EventHandler.cpp" />
+    <ClCompile Include="EventManager.cpp" />
+    <ClCompile Include="GenericComponent.cpp" />
+    <ClCompile Include="LifeSystem.cpp" />
+    <ClCompile Include="KillComponent.cpp" />
+    <ClCompile Include="NumberParameter.cpp" />
+    <ClCompile Include="PlayerInputComponent.cpp" />
+    <ClCompile Include="JumpComponent.cpp" />
+    <ClCompile Include="MovementComponent.cpp" />
+    <ClCompile Include="PatternComponent.cpp" />
+    <ClCompile Include="PhysicsEngineSettings.cpp" />
+    <ClCompile Include="PlayerShip.cpp" />
+    <ClCompile Include="PlayerShipInputComponent.cpp" />
+    <ClCompile Include="Laser.cpp" />
+    <ClCompile Include="ProjectileComponent.cpp" />
+    <ClCompile Include="Rect.cpp" />
+    <ClCompile Include="RectangleColliderComponent.cpp" />
+    <ClCompile Include="EntityManager.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="GameTime.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Pattern.cpp" />
+    <ClCompile Include="PatternPlatform.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="EngineRectangle.cpp" />
+    <ClCompile Include="Replay.cpp" />
+    <ClCompile Include="ReplaySystem.cpp" />
+    <ClCompile Include="ReplayTick.cpp" />
+    <ClCompile Include="RigidBodyComponent.cpp" />
+    <ClCompile Include="ScriptManager.cpp" />
+    <ClCompile Include="ScriptReturnValue.cpp" />
+    <ClCompile Include="ShootEvent.cpp" />
+    <ClCompile Include="SideBoundary.cpp" />
+    <ClCompile Include="SideBoundaryComponent.cpp" />
+    <ClCompile Include="SpawnableComponent.cpp" />
+    <ClCompile Include="SpawnComponent.cpp" />
+    <ClCompile Include="SpawnEvent.cpp" />
+    <ClCompile Include="SpawnSystem.cpp" />
+    <ClCompile Include="SpawnZone.cpp" />
+    <ClCompile Include="SplitComponent.cpp" />
+    <ClCompile Include="SplitEvent.cpp" />
+    <ClCompile Include="StartRecordingEvent.cpp" />
+    <ClCompile Include="StartReplayEvent.cpp" />
+    <ClCompile Include="StaticPlatform.cpp" />
+    <ClCompile Include="StopRecordingEvent.cpp" />
+    <ClCompile Include="StopReplayEvent.cpp" />
+    <ClCompile Include="StringParameter.cpp" />
+    <ClCompile Include="TextureComponent.cpp" />
+    <ClCompile Include="Timeline.cpp" />
+    <ClCompile Include="TransformComponent.cpp" />
+    <ClCompile Include="TransformComponentParameter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Asteroid.h" />
+    <ClInclude Include="ChangeReplaySpeedEvent.h" />
+    <ClInclude Include="CollisionEvent.h" />
+    <ClInclude Include="CreateAsteroidsEvent.h" />
+    <ClInclude Include="DeathEventParameter.h" />
+    <ClInclude Include="DestroyEvent.h" />
+    <ClInclude Include="duktape.h" />
+    <ClInclude Include="duk_config.h" />
+    <ClInclude Include="EnemyComponent.h" />
+    <ClInclude Include="EventManagerParameter.h" />
+    <ClInclude Include="FriendlyComponent.h" />
+    <ClInclude Include="InputEvent.h" />
+    <ClInclude Include="IntParameter.h" />
+    <ClInclude Include="JumpComponentParameter.h" />
+    <ClInclude Include="MovementComponentParameter.h" />
+    <ClInclude Include="MovementSystem.h" />
+    <ClInclude Include="CollisionsDetector.h" />
+    <ClInclude Include="ColorComponent.h" />
+    <ClInclude Include="DeathEvent.h" />
+    <ClInclude Include="DeathZone.h" />
+    <ClInclude Include="DieComponent.h" />
+    <ClInclude Include="Event.h" />
+    <ClInclude Include="EventHandler.h" />
+    <ClInclude Include="EventManager.h" />
+    <ClInclude Include="GenericComponent.h" />
+    <ClInclude Include="ComponentTypes.h" />
+    <ClInclude Include="LifeSystem.h" />
+    <ClInclude Include="KillComponent.h" />
+    <ClInclude Include="NumberParameter.h" />
+    <ClInclude Include="Parameter.h" />
+    <ClInclude Include="ParameterType.h" />
+    <ClInclude Include="PlayerInputComponent.h" />
+    <ClInclude Include="JumpComponent.h" />
+    <ClInclude Include="MovementComponent.h" />
+    <ClInclude Include="PatternComponent.h" />
+    <ClInclude Include="PhysicsEngineSettings.h" />
+    <ClInclude Include="PlayerShip.h" />
+    <ClInclude Include="PlayerShipInputComponent.h" />
+    <ClInclude Include="Laser.h" />
+    <ClInclude Include="ProjectileComponent.h" />
+    <ClInclude Include="Rect.h" />
+    <ClInclude Include="RectangleColliderComponent.h" />
+    <ClInclude Include="EntityManager.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GameTime.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="Inputs.h" />
+    <ClInclude Include="Orientation.h" />
+    <ClInclude Include="Pattern.h" />
+    <ClInclude Include="PatternPlatform.h" />
+    <ClInclude Include="PatternTypes.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="EngineRectangle.h" />
+    <ClInclude Include="Replay.h" />
+    <ClInclude Include="ReplaySystem.h" />
+    <ClInclude Include="ReplayTick.h" />
+    <ClInclude Include="RigidBodyComponent.h" />
+    <ClInclude Include="ScriptManager.h" />
+    <ClInclude Include="ScriptReturnValue.h" />
+    <ClInclude Include="Settings.h" />
+    <ClInclude Include="ShootEvent.h" />
+    <ClInclude Include="SideBoundary.h" />
+    <ClInclude Include="SideBoundaryComponent.h" />
+    <ClInclude Include="SpawnableComponent.h" />
+    <ClInclude Include="SpawnComponent.h" />
+    <ClInclude Include="SpawnEvent.h" />
+    <ClInclude Include="SpawnSystem.h" />
+    <ClInclude Include="SpawnZone.h" />
+    <ClInclude Include="SplitComponent.h" />
+    <ClInclude Include="SplitEvent.h" />
+    <ClInclude Include="StartRecordingEvent.h" />
+    <ClInclude Include="StartReplayEvent.h" />
+    <ClInclude Include="StaticPlatform.h" />
+    <ClInclude Include="StopRecordingEvent.h" />
+    <ClInclude Include="StopReplayEvent.h" />
+    <ClInclude Include="StringParameter.h" />
+    <ClInclude Include="TextureComponent.h" />
+    <ClInclude Include="Timeline.h" />
+    <ClInclude Include="TransformComponent.h" />
+    <ClInclude Include="TransformComponentParameter.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
